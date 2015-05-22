@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewEventActivity" >
+
+    <EditText
+        android:id="@+id/eventTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/event_title_hint"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/eventAddrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/eventTitleText"
+        android:ems="10"
+        android:hint="@string/event_addr_hint"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/done_sched_event" />
+
+    <Button
+        android:id="@+id/cancelEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/addEventButton"
+        android:text="@string/cancel_sched_event" />
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eventAddrText"
+        android:ems="10"
+        android:hint="@string/event_notes_hint"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/selDateButton"
+        android:layout_alignLeft="@+id/noteText"
+        android:layout_alignRight="@+id/noteText"
+        android:layout_below="@+id/noteText" >
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/date_of_event" />
+
+        <TextView
+            android:id="@+id/startTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start_time" />
+
+        <TextView
+            android:id="@+id/endTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/end_time" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selContactsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addEventButton"
+        android:layout_alignLeft="@+id/contactsText"
+        android:layout_alignRight="@+id/addEventButton"
+        android:text="@string/select_contacts" />
+
+    <EditText
+        android:id="@+id/contactsText"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_above="@+id/selContactsButton"
+        android:layout_alignLeft="@+id/noteText"
+        android:layout_alignRight="@+id/addEventButton"
+        android:ems="10"
+        android:hint="@string/contacts_list"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactsText"
+        android:layout_alignRight="@+id/contactsText"
+        android:layout_below="@+id/linearLayout1" >
+
+        <Button
+            android:id="@+id/selDateButton"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/select_date" />
+
+        <Button
+            android:id="@+id/startTimeButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/start_time_butt" />
+
+        <Button
+            android:id="@+id/endTimeButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/end_time_butt" />
+    </LinearLayout>
+
+</RelativeLayout>
