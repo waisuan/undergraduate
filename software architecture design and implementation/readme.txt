@@ -6,31 +6,6 @@ ASSIGNMENT 2
 
 README.TXT
 /*********************************************/
-
----------------------------------------------------------------------------------------------------------
-GROUP MEMBERS:-
-SIA WAI SUAN (s3308555)
-CHONG SZE ZHEN (s3310388)
-MING WEI TEE (s3260935)
----------------------------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------------------------
-BREAKDOWN OF CONTRIBUTION:-
-
-SIA WAI SUAN (s3308555)
-	-Developed/Implemented the RMI structure of the game/program.
-	-Developed/Implemented the SCORING/RANKING system of the game (Logic wise).
-
-CHONG SZE ZHEN (s3308555):-
-	-Developed/Implemented the JDBC side of the program.
-	-Developed the LOGIN/REGISTRATION GUI forms.
-	-Implemented the REVERSE gear function for the snake(s).
-
-MING WEI TEE (s3260935):-
-	-Developed/Implemented the SCORING/RANKING system of the game (GUI wise).
----------------------------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------------------------
 NOTES:-
 
 -There were no specific techniques used to reduce network traffic. Gameplay seems to be running
